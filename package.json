@@ -1,0 +1,32 @@
+{
+  "name": "bluit-server",
+  "version": "0.1.0",
+  "description": "A REST API for reading posts",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node_modules/.bin/supervisor app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mreed19/bluit-server.git"
+  },
+  "author": "Michael Reed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mreed19/bluit-server/issues"
+  },
+  "homepage": "https://github.com/mreed19/bluit-server#readme",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.1.6",
+    "mongoose": "^4.5.5",
+    "mongoose-beautiful-unique-validation": "^3.0.2"
+  },
+  "devDependencies": {
+    "supervisor": "^0.11.0"
+  }
+}
