@@ -8,6 +8,14 @@ router.get('/', (req, res) => {
     .then(posts => res.json(posts));
 });
 
+router.get('/:id', (req, res) => {
+  Post
+    .findOne({
+      _id: req.params.id
+    })
+    .then(post => res.json(post));
+});
+
 router.post('/', (req, res) => {
   var post = new Post({
     title: req.body.title,
